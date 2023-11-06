@@ -1,0 +1,19 @@
+How To make Mobile Application for Andorid or IOS by using Python
+
+1.Choosing a Framework or Tool :
+Ex : Kivy => A Python framework for developing cross-platform mobile applications and allows you to create apps that run on different OS such as : ANDROID , iOS, macOs and Linux.
+
+2.Set Up a Development Enviroment :
+=>By installing the necessary software tools as Python , Integrated development enviroment (IDE) , and the Android or iOS SDKs.
+
+3.Write Your Code:
+Write your mobile application code in Pythin using its frameworks or tools and using libraries and modules provided by the used framework to build the user interface ,handle application logic and etc.
+
+4.Testing :
+To ensure your app can work on both platforms test it on Android and iOS emulators.
+
+5.Packaging:
+Use the choosen framework or a specific tool tot generate APK and IPA app packages.
+
+6.Publishing:
+Distribute your application on Google Play Store or Apple app store.
