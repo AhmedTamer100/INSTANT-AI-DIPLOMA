@@ -1,0 +1,87 @@
+# Whats selenium ?
+Selenium is a powerful tool for controlling web browsers through programs and performing browser automation1. It is functional for all browsers,
+works on all major OS and its scripts are written in various languages i.e Python, Java, C#, etc.
+# Uses of selenium in Python
+=> Used to carry out automated test cases for browsers or web applications.
+=> ease simulate test such as tapping on button,entering content to the structures ,etc.
+=> automate functional tests and can be integrated with automation test tools such as Maven,Docker to achieve continuous
+testing.
+
+#Advantages of selenium in python
+=> Its an open source and portable web testing Framework.
+=> selenium commands are categorized in terms of different classes which make it easier to implement and understand.
+=> Automation not only saves time bt gets cost benefits too.
+=> Multilingual support is one of the major benefits of Selenium WebDriver for automation testing.
+=> The API used in python helps you in connecting to the browser through Selenium.
+
+#Disadvantages of selenium in python
+=> Cannot automate desktop or mobile applications.
+=> selenium is not the tool for automating Web Services like soap or Rest.
+=> requires technical skills to automate the tests
+=> Doesn't have any reporting capability by default
+=> Doesn't have the capability to test using the images by default.
+=> Cannot handle Window Based pop-ups which appear while working with the Web Application functionalities like Upload File, etc.
+=> Cannot automate QR Codes,OTP,Video Streaming,audio clips.
+=> Selenium doesn’t have its own IDE for creating or executing scripts.
+=> As Selenium is an open source and a free tool it hasnt official support.
+=> Creating test environments or test scripts takes time.
+
+###Example
+# Creating a new instance of the chrome driver (we should download the chrome driver to get our own chrome driver and implement in the code )
+driver = webdriver.Chrome('./chromedriver')
+
+# Any website we want to go to ex:Youtube
+driver.get("https://www.youtube.com")
+
+# Checking title of the page
+print(driver.title)
+
+# Finding element that's name attribute is "search_query" (the search box)
+search_bar = driver.find_element_by_name("search_query")
+
+# Clear any pre-populated text in the input field (search box)
+search_bar.clear()
+
+# Type in the search (typing in search bar)
+search_bar.send_keys("AI tutorial")
+
+# Submit the form
+search_bar.send_keys(Keys.RETURN)
+
+# Print the current URL
+print(driver.current_url)
+
+# Close the browser
+driver.close()
+
+####################################################################################################################################################################
+# Web scraping tools
+==>HERE ARE SOME SCRAPING TOOLS :
+
+#Apify
+==>is a well-regarded web scraping tool.It provides a full-stack platform for web scraping, data extraction, and automation. It supports both Python and JavaScript,
+and works well with libraries like Scrapy, Selenium, Playwright, and Puppeteer .It has received positive reviews for its speed, extensibility, and the ability
+to handle large volumes of data.
+==>You can get data in the desired format and frequency As:
+* {CSV,JSON,XLS,XML,Webhook,Cloud,Zapier,Make,Api}
+
+#Smartproxy
+==>Smartproxy is a high-performance proxy service provider that offers a range of proxy options, reliable support, and user-friendly features. It provides fast
+and stable connections, and is praised for its customer service and user interface.
+==>It has some features As :
+* Large Proxy Pool: Smartproxy has a large pool of proxies, providing users with a wide range of IP addresses.
+* User-Friendly Features: It offers useful apps and browser extensions, and provides 24/7 support.
+* Variety of Proxies: It offers residential proxies, datacenter proxies, and mobile proxies.
+* Web Scraping API: Smartproxy provides a Web Scraping API that can handle even JavaScript heavy websites with ease.
+
+#import.io
+==>Import.io is a powerful web scraping tool that enables you to extract data directly from the web. It’s designed to transform websites into data with a few simple
+clicks and it also allows you to create an extractor and give it an example URL containing the data you want to extract .
+==>It has some features As :
+* Point-and-Click Interface: Import.io provides an intuitive point-and-click interface that makes it easy to identify the data you want to collect .
+* Built-In Crawl Service: Import.io contains a built-in crawl service specifically designed to handle multiple URL queries. It uses dynamic rate limiting 
+  and contains a retry system to handle errors and restrictions.
+* Rotating IP Address Pool: When querying multiple web pages, the crawl service queries URLs asynchronously, each from a rotating IP address pool,
+  to make the process more efficient.
+* High-Quality Data Extraction: Import.io ensures superior performance, high-quality data extraction, and reliable success .
+
